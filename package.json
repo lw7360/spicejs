@@ -1,0 +1,19 @@
+{
+  "name": "spice",
+  "version": "0.0.1",
+  "description": "Python style slicing for JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lw7360/spicejs.git"
+  },
+  "author": "Larry Wu <lw7360@gmail.com> (http://larrywu.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lw7360/spicejs/issues"
+  },
+  "homepage": "https://github.com/lw7360/spicejs#readme"
+}
