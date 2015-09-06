@@ -24,6 +24,20 @@ var spice = require('spicejs');
 spice([1, 2, 3, 4, 5, 6, 7, 8, 9], '::3'); // [1, 4, 7]
 ```
 
+## Extending native objects
+
+```js
+var spice = require('spicejs');
+
+if (!Array.prototype.spice) {
+	Array.prototype.spice = function(slice) {
+		return spice(this, slice);
+	}
+}
+
+[1, 2, 4, 5, 6].spice('2:5') // [3, 4, 5]
+```
+
 # Installation
 
 ```bash
