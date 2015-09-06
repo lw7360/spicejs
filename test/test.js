@@ -71,4 +71,12 @@ describe('#spice', function() {
     var result = spice('123456789', '8:-8:-3');
     expect(result).to.equal('963');
   });
+
+  it('should throw error if indices are not integers or blank', function() {
+    expect(function() {spice('123', 'not:integer')}).to.throw('slice indices must be integers or blank');
+  });
+
+  it('should throw error if slice step is zero', function() {
+    expect(function() {spice('123', '::0')}).to.throw('slice step cannot be zero');
+  });
 });

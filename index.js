@@ -16,7 +16,6 @@ function spice(arr, slice) {
   // Check to make sure slice indices are integers
   for (var i = 0; i < slice.length; i++) {
     if (slice[i] !== '' && !isInteger(slice[i])) {
-      console.log(slice[i])
       throw 'slice indices must be integers or blank';
     }
   }
@@ -26,7 +25,7 @@ function spice(arr, slice) {
       spiced = arr.slice(slice[0], slice[1]);
     } else if (!slice[0] && slice[1]) {
       spiced = arr.slice(0, slice[1]);
-    } else if (!slice[1] && slice[0]) {
+    } else if (slice[0] && !slice[1]) {
       spiced = arr.slice(slice[0]);
     }
   } else if (slice.length === 3) { // Extended slice
