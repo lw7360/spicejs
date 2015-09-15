@@ -1,7 +1,7 @@
 {
   "name": "spicejs",
   "version": "0.0.1",
-  "description": "Python style slices in JavaScript.",
+  "description": "Python style slices in JavaScript",
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec",
